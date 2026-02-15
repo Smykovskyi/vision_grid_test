@@ -10,9 +10,12 @@ class CalculationService
     private string $carrier;
     private int $weight;
 
-    public function calculate(): int
+    public function calculate(): ?int
     {
         $carrierCalculator = Carrier::getCarrierCalculator($this->carrier);
+        if(null === $carrierCalculator) {
+            return null;
+        }
         return $carrierCalculator->calculate($this->weight);
     }
 

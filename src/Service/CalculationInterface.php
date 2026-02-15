@@ -4,5 +4,5 @@ namespace App\Service;
 
 interface CalculationInterface
 {
-    public function calculate(int $weight): int;
+    public function calculate(int $weight): ?int;
 }

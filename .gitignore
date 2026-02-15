@@ -13,3 +13,8 @@
 # IDEs
 /.idea/
 /.editorconfig
+
+###> phpunit/phpunit ###
+/phpunit.xml
+/.phpunit.cache/
+###< phpunit/phpunit ###
