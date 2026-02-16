@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+html {
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+}
+
+h1 {
+    margin: 5rem;
+    padding: 0;
+    text-align: center;
+}
+
+#form {
+    width: 50vw;
+    margin: auto;
+}
+
+#result {
+    width: 50vw;
+    margin: 1rem auto;
+    padding: 1rem;
+    background-color: lightgrey;
+}

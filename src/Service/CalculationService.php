@@ -19,9 +19,12 @@ class CalculationService
         return $carrierCalculator->calculate($this->weight);
     }
 
-    public function isValid(Request $request): bool
+    public function isValid(Request|array $request): bool
     {
-        $data = $request->toArray();
+        $data = $request;
+        if(!\is_array($data)) {
+            $data = $request->toArray();
+        }
 
         // Basic validation and sanitization
         if(
